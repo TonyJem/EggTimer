@@ -60,9 +60,21 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Timer" id="gq8-Wq-KGT">
                                     <items>
-                                        <menuItem title="Start" keyEquivalent="s" id="Uhs-mJ-4DC"/>
-                                        <menuItem title="Stop" keyEquivalent="x" id="Xsr-xT-FLR"/>
-                                        <menuItem title="Reset" keyEquivalent="r" id="0aR-ll-Hgj"/>
+                                        <menuItem title="Start" keyEquivalent="s" id="Uhs-mJ-4DC">
+                                            <connections>
+                                                <action selector="startTimerMenuItemSelected:" target="Ady-hI-5gd" id="Apv-j5-JiQ"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Stop" keyEquivalent="x" id="Xsr-xT-FLR">
+                                            <connections>
+                                                <action selector="stopTimerMenuItemSelected:" target="Ady-hI-5gd" id="Q0G-cN-9Nk"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Reset" keyEquivalent="r" id="0aR-ll-Hgj">
+                                            <connections>
+                                                <action selector="resetTimerMenuItemSelected:" target="Ady-hI-5gd" id="Cu6-YD-Led"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="Sc3-g4-9di"/>
                                     </items>
                                 </menu>

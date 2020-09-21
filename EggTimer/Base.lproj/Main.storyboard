@@ -753,17 +753,53 @@
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
+                            <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="20" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0EO-8y-LT7">
+                                <rect key="frame" x="20" y="80" width="306" height="371"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wRX-jt-Tll">
+                                        <rect key="frame" x="52" y="255" width="203" height="116"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="6:00" id="fR3-Y4-CEX">
+                                            <font key="font" size="100" name="HelveticaNeue"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ISb-Px-xNH">
+                                        <rect key="frame" x="20" y="0.0" width="266" height="235"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="stopped" id="3P4-AI-niZ"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ISb-Px-xNH" secondAttribute="trailing" constant="20" symbolic="YES" id="4nk-l0-kJE"/>
+                                    <constraint firstItem="ISb-Px-xNH" firstAttribute="leading" secondItem="0EO-8y-LT7" secondAttribute="leading" constant="20" symbolic="YES" id="xFp-zb-kWQ"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Ego-Jg-D3N" secondAttribute="trailing" id="Ed1-Fh-fgb"/>
+                            <constraint firstItem="0EO-8y-LT7" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="MP0-ik-UfV"/>
                             <constraint firstItem="Ego-Jg-D3N" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="Mu5-n5-goe"/>
+                            <constraint firstAttribute="trailing" secondItem="0EO-8y-LT7" secondAttribute="trailing" constant="20" id="NQg-HR-TBi"/>
+                            <constraint firstItem="Ego-Jg-D3N" firstAttribute="top" secondItem="0EO-8y-LT7" secondAttribute="bottom" constant="20" id="OHB-jB-vsH"/>
+                            <constraint firstItem="0EO-8y-LT7" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Y1G-PJ-xCR"/>
                             <constraint firstAttribute="bottom" secondItem="Ego-Jg-D3N" secondAttribute="bottom" id="hAy-9c-agi"/>
                         </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="748"/>
+            <point key="canvasLocation" x="75" y="747.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="stopped" width="128" height="128"/>
+    </resources>
 </document>

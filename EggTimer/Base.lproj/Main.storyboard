@@ -56,6 +56,17 @@
                                     </items>
                                 </menu>
                             </menuItem>
+                            <menuItem title="Timer" id="V2A-Es-Y4u">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Timer" id="gq8-Wq-KGT">
+                                    <items>
+                                        <menuItem title="Start" keyEquivalent="s" id="Uhs-mJ-4DC"/>
+                                        <menuItem title="Stop" keyEquivalent="x" id="Xsr-xT-FLR"/>
+                                        <menuItem title="Reset" keyEquivalent="r" id="0aR-ll-Hgj"/>
+                                        <menuItem isSeparatorItem="YES" id="Sc3-g4-9di"/>
+                                    </items>
+                                </menu>
+                            </menuItem>
                             <menuItem title="Window" id="aUF-d1-5bR">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">

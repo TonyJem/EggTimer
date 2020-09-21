@@ -9,6 +9,14 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    
+    @IBOutlet var timeLeftField: NSTextField!
+    @IBOutlet var eggImageView: NSImageView!
+    @IBOutlet var startButton: NSButton!
+    @IBOutlet var stopButton: NSButton!
+    @IBOutlet var resetButton: NSButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +29,15 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func startButtonClicked(_ sender: Any) {
+    }
+    
+    @IBAction func stopButtonClicked(_ sender: Any) {
+    }
+    
+    @IBAction func resetButtonClicked(_ sender: Any) {
+    }
+    
 
 }
 

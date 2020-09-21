@@ -710,6 +710,55 @@
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="346" height="471"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <stackView distribution="fillEqually" orientation="horizontal" alignment="top" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ego-Jg-D3N">
+                                <rect key="frame" x="0.0" y="0.0" width="346" height="60"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EEP-To-Tvv">
+                                        <rect key="frame" x="0.0" y="-1" width="115" height="62"/>
+                                        <buttonCell key="cell" type="smallSquare" title="Start" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AaY-Ga-nWA">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="24"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LC2-aW-zIk">
+                                        <rect key="frame" x="115" y="-1" width="116" height="62"/>
+                                        <buttonCell key="cell" type="smallSquare" title="Stop" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4cB-HE-lA5">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="24"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fzY-cu-f1u">
+                                        <rect key="frame" x="231" y="-1" width="115" height="62"/>
+                                        <buttonCell key="cell" type="smallSquare" title="Reset" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Mxj-P8-5PD">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="24"/>
+                                        </buttonCell>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="LC2-aW-zIk" firstAttribute="height" secondItem="Ego-Jg-D3N" secondAttribute="height" id="9c8-xZ-r6Z"/>
+                                    <constraint firstItem="fzY-cu-f1u" firstAttribute="height" secondItem="Ego-Jg-D3N" secondAttribute="height" id="es4-QP-ech"/>
+                                    <constraint firstItem="EEP-To-Tvv" firstAttribute="height" secondItem="Ego-Jg-D3N" secondAttribute="height" id="pU3-jP-aqm"/>
+                                    <constraint firstAttribute="height" constant="60" id="pz9-gK-ZyD"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ego-Jg-D3N" secondAttribute="trailing" id="Ed1-Fh-fgb"/>
+                            <constraint firstItem="Ego-Jg-D3N" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="Mu5-n5-goe"/>
+                            <constraint firstAttribute="bottom" secondItem="Ego-Jg-D3N" secondAttribute="bottom" id="hAy-9c-agi"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

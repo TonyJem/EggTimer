@@ -58,7 +58,7 @@
                             </menuItem>
                             <menuItem title="Timer" id="V2A-Es-Y4u">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Timer" id="gq8-Wq-KGT">
+                                <menu key="submenu" title="Timer" autoenablesItems="NO" id="gq8-Wq-KGT">
                                     <items>
                                         <menuItem title="Start" keyEquivalent="s" id="Uhs-mJ-4DC">
                                             <connections>
@@ -122,7 +122,13 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="EggTimer" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="EggTimer" customModuleProvider="target">
+                    <connections>
+                        <outlet property="resetTimerMenuItem" destination="0aR-ll-Hgj" id="xuR-pc-CCD"/>
+                        <outlet property="startTimerMenuItem" destination="Uhs-mJ-4DC" id="tnc-0h-x8w"/>
+                        <outlet property="stopTimerMenuItem" destination="Xsr-xT-FLR" id="cc4-z3-whK"/>
+                    </connections>
+                </customObject>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

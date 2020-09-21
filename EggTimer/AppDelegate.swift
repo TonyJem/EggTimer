@@ -10,6 +10,9 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    @IBOutlet var startTimerMenuItem: NSMenuItem!
+    @IBOutlet var stopTimerMenuItem: NSMenuItem!
+    @IBOutlet var resetTimerMenuItem: NSMenuItem!
     
 
 
